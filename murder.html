@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personl Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="music-container">
+
+        <div class="music-body">
+            <div class="layer">
+                <div class="volume-slider">
+                <span class="bar"></span>
+                <input type='range' min='0.01' max='1' value='1' step='0.01' class="volumerange"/>
+                </div>
+            </div>
+            <div class="top-icons">
+                <button class="volume btn" id="volume">
+                    <i id="volumeicon" class="fas fa-volume-up"></i>
+                </button>
+                <button class="list btn" id="list">
+                    <i class="fas fa-list"></i>
+                </button>
+            </div>
+            
+            <div class="music-info">
+                <h2 id="title">Murder</h2>
+            </div>
+            <audio src="Murder (Slowed Reverb)-(PagalSongs.Com.IN).mp3" id="audio"></audio>
+            <div class="music-progress">
+                <div class="progress-bar">
+                    <span class="progress-line"></span>
+                    <input type='range' min='0' max='100' value='0' class="progress" id="progress"/>
+                </div>
+                <div class="duration">
+                    <span class="current-time">00:00</span>
+                    <span class="duration-time">00:00</span>
+                </div>
+            </div>
+            <div class="music-controls">
+                <button class="repeat btn" id="repeat">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+                <div class="main-controls">
+                    <a href="cherri.html"><button class="prevbtn" id="prevbtn">
+                        <i class="fas fa-backward"></i>
+                    </button></a>
+                    <button class="playpause" id="playpause">
+                        <i id="playpause-btn"class="fas fa-play"></i>
+                    </button>
+                    <a href="bebe.html"><button class="nextbtn" id="nextbtn">
+                        <i class="fas fa-forward"></i>
+                    </button></a>
+                </div>
+                <button class="like btn" id="like">
+                    <i id="likeicon" class="far fa-heart"></i>
+                </button>
+            </div>
+            <div class="songs-list" id="songs-list">
+                <button class="list-close btn" id="listclose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
